@@ -41,7 +41,7 @@ This method's responsibility is to:
     - How did we "Assert" and check that the method returns an array of hashes with the correct keys?
     - How did we "Assert" and check that the method returns an accurate list of Olympic medalists?
     - What nominal tests did we miss?
-1.Write down descriptions of 2 edge test cases that aren't in our tests. (Don't write the tests, just come up with your test cases for practice!)
+1. Write down descriptions of 2 edge test cases that aren't in our tests. (Don't write the tests, just come up with your test cases for practice!)
 1. TDD the implementation of `get_all_olympic_athletes(filename)` with the provided tests.
 (In other words, given the tests have already been written for you, write the method to get all tests to pass.)
 

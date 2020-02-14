@@ -46,6 +46,8 @@ This method's responsibility is to:
 (In other words, given the tests have already been written for you, write the method to get all tests to pass.)
 
     `When calling CSV.read, consider what the relative path of the csv file from the file the code is in`
+    
+    `You will need to use the to_h syntax referenced [here](https://github.com/Ada-Developers-Academy/textbook-curriculum/blob/master/02-intermediate-ruby/csv-as-a-database.md#bonus-syntax-csvread-and-forcing-csvtable-to-be-an-array)`
 
 ### `total_medals_per_team(olympic_data)`
 

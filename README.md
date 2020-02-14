@@ -21,7 +21,7 @@ The optional wave focuses on writing tests, and implementing methods with Enumer
 The tests in `test/csv_practice_test.rb` describe a method named `get_all_olympic_athletes(filename)`.
 
 This method's responsibility is to:
-  - take in a `filename` as a parameter. This should be a string, and a relative path to a CSV file containing Olympic medalist data.
+  - take in a `filename` as a parameter. This should be a string, representing a relative path to a CSV file containing Olympic medalist data.
   - return an array of Olympic medalists that is described in a given file.
     - Each Olympic medalist (each element in the array) is a hash.
     - Each Olympic medalist hash should have only the following keys:
@@ -35,34 +35,35 @@ This method's responsibility is to:
         - "Event"
         - "Medal"
 
-1. Come up with 2 test cases that test the core functionality, and are nominal tests.
+1. Before reading the test file, write down a description of 2 test cases that test the core functionality, and are nominal tests.
 1. Read through the tests in `test/csv_practice_test.rb`.
     - How did we "Assert" and check that the method returns an array of hashes?
     - How did we "Assert" and check that the method returns an array of hashes with the correct keys?
     - How did we "Assert" and check that the method returns an accurate list of Olympic medalists?
     - What nominal tests did we miss?
-1. Come up with 2 edge test cases that aren't in our tests. (Don't write the tests, just come up with your test cases for practice!)
+1.Write down descriptions of 2 edge test cases that aren't in our tests. (Don't write the tests, just come up with your test cases for practice!)
 1. TDD the implementation of `get_all_olympic_athletes(filename)` with the provided tests.
+(In other words, given the tests have already been written for you, write the method to get all tests to pass.)
 
 ### `total_medals_per_team(olympic_data)`
 
 The tests in `test/csv_practice_test.rb` describe a method named `total_medals_per_team(olympic_data)`.
 
 This method's responsibility is to:
-  - take in an array of data of olympic athletes. Each element in the array should be a hash representing an Olympic athletes.
+  - take in an array of data of olympic athletes. Each element in the array should be a hash representing an Olympic athlete.
   - return a hash with the details of how many medals every team has achieved.
     - This hash should have a key for every team that has won at least one medal (the key is a string)
     - The value for each key should be an integer
     - A team has achieved a medal if their medal is not `"NA"`
-  - this method SHOULD NOT be reading from a CSV file or writing to a CSV file
+  - This method SHOULD NOT be reading from a CSV file or writing to a CSV file
 
-1. Come up with 2 test cases that test the core functionality, and are nominal tests.
+1. Write descriptions for 2 test cases that test the core functionality, and are nominal tests.
 1. Read through the tests in `test/csv_practice_test.rb`.
     - In the tests, how do we "Arrange" and setup the data of all Olympic athletes?
     - How did we "Assert" and check that the method returns a hash?
     - How did we "Assert" and check that the method returns an accurate hash?
     - What nominal tests did we miss?
-1. Come up with 2 edge test cases that aren't in our tests. (Don't write the tests, just come up with your test cases for practice!)
+1. Write descriptions for 2 edge test cases that aren't in our tests. (Don't write the tests, just come up with your test cases for practice!)
 1. TDD the implementation of `total_medals_per_team(olympic_data)` with the provided tests.
 
 ### Can `total_medals_per_team` Use Enumerable Methods?
@@ -85,15 +86,15 @@ This method's responsibility is to:
   - return an array of hashes.
     - Each element in the array should be a hash that contains all of the Olympic medalist information (ID, Name, Team, etc.)
     - The array should only contain athletes who won a Gold medal, or when their `Medal` value is equal to `"Gold"`
-  - this method SHOULD NOT be reading from a CSV file or writing to a CSV file
+  - This method SHOULD NOT be reading from a CSV file or writing to a CSV file
 
-1. Come up with 2 test cases that test the core functionality, and are nominal tests.
+1. Write descriptions for 2 test cases that test the core functionality, and are nominal tests.
 1. Read through the tests in `test/csv_practice_test.rb`.
     - In the tests, how do we "Arrange" and setup the data of all Olympic athletes?
     - How did we "Assert" and check that the method returns an array of hashes?
     - How did we "Assert" and check that the method returns an accurate list of only gold medalists?
     - What nominal tests did we miss?
-1. Come up with 2 edge test cases that aren't in our tests. (Don't write the tests, just come up with your test cases for practice!)
+1. Write descriptions for 2 edge test cases that aren't in our tests. (Don't write the tests, just come up with your test cases for practice!)
 1. TDD the implementation of `get_all_gold_medalists(olympic_data)` with the provided tests.
 1. If your working implementation did not use the method `filter`, refactor to use `filter` now.
 

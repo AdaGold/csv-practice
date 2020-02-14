@@ -45,6 +45,8 @@ This method's responsibility is to:
 1. TDD the implementation of `get_all_olympic_athletes(filename)` with the provided tests.
 (In other words, given the tests have already been written for you, write the method to get all tests to pass.)
 
+    `When calling CSV.read, consider what the relative path of the csv file from the file the code is in`
+
 ### `total_medals_per_team(olympic_data)`
 
 The tests in `test/csv_practice_test.rb` describe a method named `total_medals_per_team(olympic_data)`.
